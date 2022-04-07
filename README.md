@@ -9,7 +9,7 @@ counts and weights.
 ## Install
 
 ``` r
-devtools::install_github("sooyongl/EmStanS", dependencies = T)
+devtools::install_github("CMS5000/EmStanS", dependencies = T)
 ```
 
 ## Usage
