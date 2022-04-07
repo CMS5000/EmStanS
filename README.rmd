@@ -1,0 +1,70 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = F)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "vignettes",
+  out.width = "100%"
+)
+
+options(tibble.print_min = 5, tibble.print_max = 5)
+```
+
+# EmStanS 
+
+## Overview
+
+This package aims to support Embedded Standard Setting, calculating counts and weights.
+
+
+## Install
+
+
+```{r}
+devtools::install_github("CMS5000/EmStanS", dependencies = T)
+```
+
+## Usage
+
+```{r eval = T}
+library(EmStanS)
+```
+
+```{r eval = T}
+# data <- read.csv(filePath)
+fake_data <- genFakeData("runif",
+                         cor_value = 0.6, 
+                         nlevel = 3, 
+                         n = 50, 
+                         100, 300)
+
+head(fake_data, 20)
+
+# Or you can use your own data structured by the following table.
+```
+
+```{r eval = T}
+res <- EmStanS::emstans(
+  data = fake_data, 
+  lvname = c("Level1", "Level2", "Level3")
+  )
+
+res
+```
+
+
+
+## Launch the Shiny app
+
+```{r eval = F}
+# Launch Shiny app on the local computer
+EmStanS::launchEmStanS(local = T)
+
+# Launch Shiny app on the server
+EmStanS::launchEmStanS(local = F)
+```
+
