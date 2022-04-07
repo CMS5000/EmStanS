@@ -51,7 +51,7 @@ head(fake_data, 20)
 #> 19  19   206.40 Level3
 #> 20  20   209.80 Level2
 
-# Or you can use your own data structured by the following table.
+# Or you can use your own data structured by the above table.
 ```
 
 ``` r
