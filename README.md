@@ -1,6 +1,5 @@
 
 # EmStanS
-Embedded Standard Setting (ESS) is an approach to establish performance standards that augments and is embedded within existing principled assessment design (PAD) practices. Under ESS, achievement level descriptor (ALD) writing and the alignment of test items to specified achievement levels are viewed as the fundamental standard-setting activities and cut scores are estimated by optimizing the relationship between the item-ALD alignments and the empirically. Under ESS, this package provides cut score estimation algorithm (referred to as ESS-Count and ESS-Weight).
 
 ## Overview
 
@@ -10,7 +9,7 @@ counts and weights.
 ## Install
 
 ``` r
-devtools::install_github("CMS5000/EmStanS", dependencies = T)
+devtools::install_github("sooyongl/EmStanS", dependencies = T)
 ```
 
 ## Usage
@@ -52,7 +51,7 @@ head(fake_data, 20)
 #> 19  19   206.40 Level3
 #> 20  20   209.80 Level2
 
-# Or you can use your own data structured by the above table.
+# Or you can use your own data structured by the following table.
 ```
 
 ``` r

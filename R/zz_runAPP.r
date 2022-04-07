@@ -35,12 +35,12 @@ launchEmStanS <- function(local = T) {
          server = shiny_server
        )
        shiny::runApp(app)
-  
+
      } else {
        stop('shiny package is not available. Please install.', call.=FALSE)
      }
    } else {
-  
+
      browseURL("https://creativemeasurementsolutionsllc.shinyapps.io/EmStanS_Lite")
    }
 }
