@@ -10,6 +10,7 @@ counts and weights.
 
 ``` r
 devtools::install_github("CMS5000/EmStanS", dependencies = T)
+# If running into error, install the newest version of rlang package after removing the rlang package (remove.packages("rlang")
 ```
 
 ## Usage
